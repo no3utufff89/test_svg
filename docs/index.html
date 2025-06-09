@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png" />
+    <link rel="shortcut icon" href="files/favicon.ico" />
+    <meta property="og:title" content="Project title here" />
+    <meta property="og:description" content="Project description here" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
+
+    <title>Главная - Project title</title>
+</head>
+
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="/" class="social-list__link social-list__link_tg"
+                        ><svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#tg_icon"></use></svg
+                    ></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="/" class="social-list__link social-list__link_git"
+                        ><svg class="icon">
+                            <use xlink:href="img/icons/sprite.svg#azure"></use></svg
+                    ></a>
+                </li>
+            </ul>
+            <div class="theme-switch">
+                <button type=""></button>
+            </div>
+        </div>
+    </div>
+</header>
+ <main class="main">main</main>
+
+        <footer class="footer">
+    <p>FOOTER HERE</p>
+    <style>
+.show-grid::before {
+	--grid-color: #ff00001c;
+}
+#grid-btn {
+	position: fixed;
+	right: 12px;
+	bottom: 12px;
+	padding: 2px 4px;
+	background: #00000047;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+	user-select: none;
+}
+#grid-btn:hover {
+	background: red;
+}
+.show-grid .main-header {
+	background: #0000001f;
+}
+.show-grid .main-footer {
+	background: #0000001f;
+}
+.show-grid main>* {
+	background: #0000001f;
+}
+.show-grid:before {
+	position: fixed;
+	width: 100%;
+	max-width: var(--page-width);
+	margin: 0 auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	pointer-events: none;
+	--grid-column-width: calc((100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns));
+	border: solid transparent;
+	border-width: 0 calc(var(--grid-sides) - var(--grid-gutter) / 2);
+	background-image: repeating-linear-gradient(to right,
+		transparent 0,
+		transparent calc(var(--grid-gutter) / 2),
+		var(--grid-color) calc(var(--grid-gutter) / 2),
+		var(--grid-color) calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+		transparent calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+		transparent calc(var(--grid-column-width) + var(--grid-gutter)));
+	background-repeat: no-repeat;
+}
+</style>
+<script>
+	const bodyGrid = document.querySelector("body");
+	function showGrid(){bodyGrid.classList.toggle("show-grid")}
+</script>
+<div id="grid-btn" onclick="showGrid()">GRID</div>
+</footer>
+
+    </body>
+</html>
